@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	raven "github.com/getsentry/raven-go"
+	raven "github.com/musqdp/raven-go"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )
@@ -96,6 +96,10 @@ func NewSentryHook(DSN string, levels []logrus.Level) (*SentryHook, error) {
 		return nil, err
 	}
 	return NewWithClientSentryHook(client, levels)
+}
+
+func SetUserAgent(newUserAgent string) {
+	raven.SetUserAgent(newUserAgent)
 }
 
 // NewWithTagsSentryHook creates a hook with tags to be added to an instance

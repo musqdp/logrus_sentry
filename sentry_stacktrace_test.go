@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/getsentry/raven-go"
+	"github.com/musqdp/raven-go"
 	pkgerrors "github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

@@ -1,7 +1,7 @@
 package logrus_sentry
 
 import (
-	"github.com/getsentry/raven-go"
+	"github.com/musqdp/raven-go"
 )
 
 // SetDefaultLoggerName sets default logger name tag.
